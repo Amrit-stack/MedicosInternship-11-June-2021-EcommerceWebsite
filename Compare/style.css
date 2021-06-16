@@ -10,7 +10,6 @@ html, body{
 } 
 
 .header{
-    max-width: 100%;
     max-height: 20%;
     background-color: #1230d8;
     display: flex;
@@ -128,7 +127,7 @@ a{
     color: white;
 }
 p{
-    margin-top:20px;
+    margin-top:22px;
 }
 
 
@@ -167,10 +166,13 @@ p{
 {
   border-right: none;
   border-radius:50px 0px 0px 50px;
+  width: 20px;
+  margin-right: -6px;
 }
 .row .column button:last-child
 {
   border-radius:0px 50px 50px 0px;
+  width: 20px;
 }
 .row .column .button
 {
@@ -195,6 +197,7 @@ img
 .row .column .desc
 {
     max-width: 97%;
+    font-weight: bold;
 }
 .row .column .image,.row .column .material
 {
@@ -218,4 +221,84 @@ img
 }
 .row .column .description2 p{
     margin-top: 0px;
+}
+
+@media only screen and (max-width: 900px)
+{
+    .navbar,.header
+    {
+        width: 166%;
+    }
+    .row .column
+    {
+        width: 27%;
+    }    
+    .row .column .button
+    {
+        margin-top: 11vh;
+    }
+    .container
+    {
+        width:112% ;
+        top: 168px;
+        left:35%;
+        margin: 0px;
+        height: 119vh;
+    }
+    .blank
+    {
+        height: 112vh;
+        background-color: whitesmoke;
+    }
+    .white-container
+    {
+        width: 127%;
+
+    }
+    .white-container i
+    {
+        left: 97vh;
+        top: 177vh;
+        position: absolute
+    }
+    .black-container
+    {
+        width: 150%;
+    }
+    
+}
+@media only screen and (max-width: 500px)
+{
+    .navbar,.header
+    {
+        width: 244%;
+    }
+    .row .column
+    {
+        width: 27%;
+    }    
+    .row .column .button
+    {
+        margin-top: 11vh;
+    }
+    .container
+    {
+        top: 144px;
+        height: 121vh;
+        width: 184%;
+    }
+    .white-container
+    {
+        width: 205%;
+    }
+    .black-container
+    {
+        width: 229%;
+    }
+    .white-container i
+    {
+        left: 87vh;
+        top: 174vh;
+        position: absolute
+    }
 }
