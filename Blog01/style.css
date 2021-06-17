@@ -5,7 +5,6 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 .header{
-    max-width: 100%;
     max-height: 20%;
     background-color: #1230d8;
     display: flex;
@@ -356,4 +355,83 @@ button
 .flex-col, .header-left-text, .footer-left, .main-container-background, .flex-container1-item{
     display: flex;
     flex-direction: column;
+}
+@media only screen and (max-width:1326px)
+{
+    .blank
+    {
+        height: 455vh;
+    }
+    .white-container i
+    {
+        top: 200%;
+
+    }
+}
+@media only screen and (max-width:700px)
+{
+    .blank
+    {
+        height:509vh;
+        width: 140%;
+    }
+    .header, .navbar
+    {
+        width: 140%;
+    }
+    .container
+    {
+        position: absolute;
+        top: 30%;
+        left: 8%;
+        box-shadow: 5px 10px 18px #888888;
+        width: 122%;
+        height: 360vh;
+    }
+    .white-container
+    {
+        width: 100%;
+    }
+    .black-container
+    {
+        width: 125%;
+    }
+    h1
+    {
+    font-size: 25px;
+    margin: 15px;
+    }
+    .mflex .part2
+    {
+    display: flex;
+    justify-content: space-around;
+    max-width: 100%;
+    margin: 10%;
+    flex-direction: column;
+    }
+    button
+    {
+        margin-top: 3%;
+        margin-right: 35%;
+    }
+}
+@media only screen and (max-width:300px)
+{
+    .header,.navbar
+
+    {
+        width: 231%;
+    }
+    .container
+    {
+        width: 200%;
+    }
+    .white-container
+    {
+        width:200%;
+    } 
+    .black-container
+    {
+        width: 215%;
+    }
 }
