@@ -99,14 +99,14 @@ html, body{
 }
 .container
 {
-    margin:10%;
     position:absolute;
     background-color: white;
     box-shadow: 5px 10px 18px #888888;
-    border: 1px solid black;
     width: 77%;
-    top: 95%;
+    top: 118%;
+    right: 9%;
     height: 119%;
+
 }
 .container .top-section
 {
@@ -114,7 +114,8 @@ html, body{
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
-    border-bottom: 1px solid;
+    background-color: lightgrey;
+    height:50px;
 }
 .container .top-section div:first-child
 {
@@ -139,17 +140,31 @@ html, body{
 {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    
+    text-align: center;
 }
 .container .second-section div
 {
-    border-right:1px solid lightgray;
+    
+    width: 24.9%;
+    border-right: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+}
+.container .second-section:last-child
+{
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 1px so  lid lightgray;
+    text-align: center;
+
+
 }
 .blank 
 {
     height:100vh;
     background-color: whitesmoke;
 }
+
 .white-container
 {
     text-align: center;
@@ -168,8 +183,8 @@ input[type="text"]
 }
 .white-container i{
     position: absolute;
-    left: 140vh;
-    top: 167vh;
+    right: 33%;
+    top:262vh;
 }
 .black-container
 {
@@ -218,4 +233,80 @@ a{
 }
 p{
     margin-top:20px;
+    font-size: 10px;
 }
+h3
+{
+    font-size: 15px;
+}
+.container i
+{
+    color: blue;
+  
+}
+
+@media only screen and (max-width:1326px)
+ {
+    body
+    {
+        width:100%;
+    }
+    .container
+    {
+        height: max-content;
+
+    }
+    .blank
+    {
+        height:93vh;
+    }
+    .white-container i{
+        position: absolute;
+        right: 33%;
+        top: 279vh;
+       
+    }
+ }
+ @media only screen and (max-width:900px)
+ {
+    body
+    {
+        width:177%;
+    }
+    .container
+    {
+        height: max-content;
+        left: 22%;
+        width: 131%;
+
+    }
+    .blank
+    {
+        height:92vh;
+    }
+    .white-container i{
+        /*position: absolute;
+        left: 140vh;
+        top: 167vh;*/
+        visibility: hidden;
+    }
+ }
+ @media only screen and (max-width:454px)
+ {
+    body
+    {
+        width:298%;
+    }
+    .container
+    {
+        height: 125vh;
+        width: 244%;
+    }
+    .white-container i{
+        /*position: absolute;
+        left: 140vh;
+        top: 167vh;*/
+        visibility: hidden;
+    }
+
+ }
