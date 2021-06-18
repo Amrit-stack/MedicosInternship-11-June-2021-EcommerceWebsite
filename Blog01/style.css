@@ -89,7 +89,12 @@
 .container .middle-section .mflex div
 {
     max-width: 50%;
-    overflow: hidden;
+}
+.container .middle-section .mflex div img
+{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 .container .middle-section .mflex .part2
 {
@@ -372,7 +377,7 @@ button
 {
     .blank
     {
-        height:509vh;
+        height:480vh;
         width: 140%;
     }
     .header, .navbar
@@ -415,7 +420,7 @@ button
         margin-right: 35%;
     }
 }
-@media only screen and (max-width:300px)
+@media only screen and (max-width:576px)
 {
     .header,.navbar
 
@@ -433,5 +438,10 @@ button
     .black-container
     {
         width: 215%;
+    }
+    .blank
+    {
+        height:543vh;
+        width: 238%;
     }
 }
